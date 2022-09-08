@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import wiiro from 'assets/images/mrWii.webp'
+import MgrGracz from 'assets/images/MgrGracz.webp'
 import { Title, Button } from 'styles/style'
 import styled from 'styled-components'
 
@@ -15,7 +15,7 @@ export default () => (
       }}
     >
       <Div>
-        <img src={wiiro} alt="Mr Wii" />
+        <img src={MgrGracz} alt="Mr Wii" />
         <Tituru>404 - zagubiony?</Tituru>
         <NavLink to="/" exact>
           <TyButton id="input-submit">Strona główna</TyButton>
@@ -42,10 +42,10 @@ const TyButton = styled(Button)`
   margin-left: 0;
   margin-bottom: 0;
   margin-top: 2rem;
-  background-color: #31d8bc;
-  border: 2px solid #31d8bc;
+  background-color: #bbbdbc;
+  border: 2px solid #bbbdbc;
   &:hover {
-    color: #31d8bc;
+    color: #bbbdbc;
   }
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     width: 60%;

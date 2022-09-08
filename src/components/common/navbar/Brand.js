@@ -5,7 +5,7 @@ import logo1 from 'assets/images/cover2.png'
 import logo2 from 'assets/images/cover3.png'
 const Brand = () => {
   return (
-    <Link href="wstawLINKTUDOSTRONY">
+    <Link href="https://mgrgracz.netlify.app/">
       <Image
         src={logo}
         alt="MgrGracz"
