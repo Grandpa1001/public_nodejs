@@ -55,16 +55,21 @@ const About = () => {
               </Parag>
               <br />
               <Parag>
-              Czuje się osobą która nie boi się podjąć każdego zadania. Moje doświadczenie uwzględnia, wiele rozwiązań które
-              nie zawsze są ze sobą mocno powiązane. Miałem okazję tworzyć gry na silniku Unity przez co brałem również udział w GameJamie.
-              Przez prowadzenie socialmediów wypożyczalni sportowych aut. Nie zależnie co jest do zrobienia zawsze szukam najciekawszych rozwiązań.
+              Czuje się osobą, która nie waha się podjąć nowych wyzwań. Podejmowałem się różnych zadań od tworzenia gier
+              na silniku Unity3d i udział w gamejamie po prowadzenie SM dla wypożyczalni aut sportowych. W podejmowanych działaniach kieruje
+              się poszukiwaniem najciekawszych rozwiązań.
               </Parag>
               <br />
               <Parag>
-                Od maja 2022 siedzę bardzo głęboko w świecie Web3. Od tego dnia zakupiłem swoje pierwsze ETH. Rozpocząłem w ten sposób
-                na własną rękę naukę tego skrytego świata. Utworzyłem aplikację wspierająca mnie w tych działaniach. Służyła mi do zbierania codziennie nowej wiedzy.
-                Z czasem przerodziła się w dziennik. Moim kolejnym krokiem jest dołączenie do tego świata, tak by być tym który go tworzy.
-              
+                Od maja 2022 zainteresowałem się światem Web3. Zakupiłem wtedy swoje pierwsze ETH i stworzyłem aplikacje, 
+                w której codziennie zapisywałem nowe informacje, prowadziłem peirwsze analizy, rozwijałem słownik pojęć. 
+                Z czasem aplikacja przypominała dziennik z podróży do świata Web3.
+
+              </Parag>
+              <br />
+              <Parag>
+                Kolejnym krokiem było dołączenie do społeczności. Nowe kontakty, codzienne rozmowy, tylko utwierdziły mnie w 
+                przekonaniu że chciałbym nie tylko tu być ale także tworzyć nowy internet web3.
               </Parag>
               <br />
               <br />
