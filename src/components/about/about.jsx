@@ -182,6 +182,7 @@ const Parag = styled.p`
   font-size: 17px;
   text-align: justify;
   text-justify: inter-word;
+  font-family: 'Montserrat', sans-serif;
 
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 13px;
@@ -193,6 +194,7 @@ const Parag = styled.p`
 const List = styled.li`
   padding: 5px;
   margin: 10px;
+  
   color: rgb(30, 51, 51);
   font-size: 18px;
   display: inline-block;
@@ -208,11 +210,13 @@ const List = styled.li`
 
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
     margin-right: auto;
     font-size: 12px;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
     margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
     margin-right: auto;
     font-size: 13px;
   }
@@ -249,13 +253,16 @@ const List1 = styled(List)`
 
 const MiniTitle = styled.h2`
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 15px;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    font-family: 'Montserrat', sans-serif;
   }
 `
 const MiniTitle1 = styled.h3`
@@ -290,6 +297,7 @@ const MiniTitle2 = styled(MiniTitle1)`
 `
 const Div = styled.div`
   margin-left: 4%;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 2%;
   font-family: 'Montserrat', sans-serif;
 
@@ -306,6 +314,7 @@ const Header = styled(Header2)`
   margin-bottom: 2rem;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     margin-left: 0;
     margin-bottom: 1rem;

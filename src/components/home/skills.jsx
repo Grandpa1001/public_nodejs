@@ -7,6 +7,7 @@ import jsSvg from 'assets/svg/js.svg'
 import sqlSvg from 'assets/svg/mysql.svg'
 import reactSvg from 'assets/svg/react.svg'
 import jquerySvg from 'assets/svg/jquery.svg'
+import unity from 'assets/svg/unity.svg'
 import mongoSvg from 'assets/svg/mongodb.svg'
 import { Header2 } from 'styles/style'
 import styled from 'styled-components'
@@ -16,6 +17,9 @@ const Skills = () => {
     <Container maxWidth="lg">
       <Header2>Technologie</Header2>
       <ul>
+      <List>
+          <Img src={unity} alt="unity" />
+        </List>
         <List>
           <Img src={htmlSvg} alt="htmlimg" />
         </List>

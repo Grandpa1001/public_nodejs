@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import rpg1 from 'assets/images/rpg1.webp'
+import kolektyw from 'assets/images/kolektyw.webp'
 import mugOfWar from 'assets/images/mugOfWar.webp'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
@@ -133,7 +134,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Play
+                     Zagraj
                     </a>
                   </Button>
                 </CardActions>
@@ -184,7 +185,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Link do gry
+                      Pobierz
                     </a>
                   </Button>
                 </CardActions>
@@ -235,8 +236,74 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Link do gry
+                      Pobierz
                     </a>
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs>
+              <Card className={classes.card}>
+                <CardMedia
+                  component="img"
+                  alt="Kolektyw NFT"
+                  style={{
+                    width: '60%',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    marginTop: '1rem'
+                  }}
+                  image={kolektyw}
+                  title="NFT POLSKA - to świetna Polska społeczność"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h2" component="h2">
+                   Konkurs "Zdefiniuj kolektyw"
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                Unity3d
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                Wizja metaversu i kolektywu w nim umieszczonego.
+                  </Typography>
+                </CardContent>
+
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
+                    <a
+                      href="https://drive.google.com/drive/u/0/folders/1-2yB60eHijGYJa4U7gMTdoAVsDfNIs2S"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pobierz
+                    </a>
+                    
+                  </Button>
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
+                    <a
+                      href="https://twitter.com/MgrGracz/status/1565102856730038272?s=20&t=03TLQ8-nqShxZlwY-d4BSw"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Twitter
+                    </a>
+                    
                   </Button>
                 </CardActions>
               </Card>
