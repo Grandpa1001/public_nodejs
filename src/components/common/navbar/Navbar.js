@@ -32,7 +32,7 @@ const Navbar = props => {
             <NavLink activeStyle={styleAc} to="/contact" exact>
               Kontakt
             </NavLink>
-            <Span />
+           
             <NavLink activeStyle={styleAc} to="/about" exact>
               O mnie
             </NavLink>
@@ -44,7 +44,6 @@ const Navbar = props => {
             />
           </BurgerWrapper>
         </FlexContainer>
-        <Hr />
       </NavBar>
       <CollapseMenu
         navbarState={props.navbarState}
@@ -56,25 +55,12 @@ const Navbar = props => {
 
 export default Navbar
 
-const Hr = styled.hr`
-  width: 100%;
-  margin: 0 auto;
-`
-
-const Span = styled.span`
-  border-right: 1px solid #333;
-  margin: 0 1.5rem;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
 
 const NavBar = styled(animated.nav)`
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: #fff;
   z-index: 5;
   font-size: 1.7rem;
 `

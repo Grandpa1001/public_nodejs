@@ -1,16 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from 'assets/images/cover.png'
-import logo1 from 'assets/images/cover2.png'
-import logo2 from 'assets/images/cover3.png'
+import mgrGraczIntroW from 'assets/svg/mgrGraczIntroWhite.svg'
 const Brand = () => {
   return (
     <Link href="https://mgrgracz.netlify.app/">
       <Image
-        src={logo}
+        src={mgrGraczIntroW}
         alt="MgrGracz"
-        onMouseOver={e => (e.currentTarget.src = logo1)}
-        onMouseOut={e => (e.currentTarget.src = logo2)}
       />
     </Link>
   )

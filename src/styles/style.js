@@ -3,14 +3,20 @@ import styled from 'styled-components'
 //  Buttons
 
 export const Button = styled.button`
-  padding: 0.6rem;
+width: 80%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto; 
+margin-top: 50px; 
+padding: 0.6rem;
   font-size: 18px;
   font-weight: 900;
   color: #fff;
-  background-color: #444444;
-  border: 2px solid #444444;
+  background-color: #00b1ff;
+  border: 2px solid #00b1ff;
   cursor: pointer;
-  width: 35%;
+  width: 10%;
   transition: 0.25s ease;
   border-radius: 5%;
   margin-bottom: 2rem;
@@ -40,11 +46,10 @@ export const Button = styled.button`
 
 export const BgImg = styled.img`
   position: absolute;
-  left: 0vw;
-  top: 8vh;
-  width: 17%;
+  width: 96%;
+  margin-top: -10rem;
   height: auto;
-  z-index: 0;
+  z-index: -2;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     top: 12vh;
     width: 50%;
@@ -88,13 +93,13 @@ export const BgImg3 = styled(BgImg2)`
 // Headers
 
 export const Header1 = styled.h1`
-  color: #444444;
-  font-family: Poppins;
+  color: #707070;
+  text-align: center;
   font-style: normal;
-  font-weight: normal;
-  font-size: 86px;
+  font-family: 'Montserrat';
+  font-size: 150px;
   position: relative;
-  z-index: 1;
+  z-index: -2;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 36px;
   }
@@ -144,6 +149,9 @@ export const Header2 = styled.h1`
     margin-bottom: 7vh;
   }
 `
+
+
+
 
 export const Title = styled.h1`
   font-size: 40px;
