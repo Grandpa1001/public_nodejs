@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useSpring, animated, config } from 'react-spring'
-import { NavLink } from 'react-router-dom'
 
 import Brand from './Brand'
-import BurgerMenu from './BurgerMenu'
-import CollapseMenu from './CollapseMenu'
 
 const Navbar = props => {
   const barAnimation = useSpring({
@@ -23,32 +20,11 @@ const Navbar = props => {
   return (
     <>
       <NavBar style={barAnimation}>
-        <FlexContainer>
+        <FlexContainer >
           <Brand />
-          <NavLinks style={linkAnimation}>
-            <NavLink activeStyle={styleAc} to="/" exact>
-              Wizytówka
-            </NavLink>
-            <NavLink activeStyle={styleAc} to="/contact" exact>
-              Kontakt
-            </NavLink>
-           
-            <NavLink activeStyle={styleAc} to="/about" exact>
-              O mnie
-            </NavLink>
-          </NavLinks>
-          <BurgerWrapper>
-            <BurgerMenu
-              navbarState={props.navbarState}
-              handleNavbar={props.handleNavbar}
-            />
-          </BurgerWrapper>
         </FlexContainer>
       </NavBar>
-      <CollapseMenu
-        navbarState={props.navbarState}
-        handleNavbar={props.handleNavbar}
-      />
+      
     </>
   )
 }
@@ -58,6 +34,7 @@ export default Navbar
 
 const NavBar = styled(animated.nav)`
   position: fixed;
+  background-image: linear-gradient(#9a9a98, #d0cfcd);
   width: 100%;
   top: 0;
   left: 0;
@@ -105,8 +82,54 @@ const NavLinks = styled(animated.ul)`
 
 const BurgerWrapper = styled.div`
   margin: auto 0;
-
   @media (min-width: 769px) {
     display: none;
   }
 `
+
+
+
+
+
+/*
+Zakomentowane
+import { NavLink } from 'react-router-dom'
+import BurgerMenu from './BurgerMenu'
+import CollapseMenu from './CollapseMenu'
+
+
+
+
+ return (
+    <>
+
+      <NavBar style={barAnimation}>
+        <FlexContainer >
+          <Brand />
+          <NavLinks style={linkAnimation}>
+            <NavLink activeStyle={styleAc} to="/" exact>
+              Wizytówka
+            </NavLink>
+            <NavLink activeStyle={styleAc} to="/contact" exact>
+              Kontakt
+            </NavLink>
+           
+            <NavLink activeStyle={styleAc} to="/about" exact>
+              O mnie
+            </NavLink>
+          </NavLinks>
+          <BurgerWrapper>
+            <BurgerMenu
+              navbarState={props.navbarState}
+              handleNavbar={props.handleNavbar}
+            />
+          </BurgerWrapper>
+        </FlexContainer>
+      </NavBar>
+      <CollapseMenu
+        navbarState={props.navbarState}
+        handleNavbar={props.handleNavbar}
+      />
+    </>
+  )
+*/

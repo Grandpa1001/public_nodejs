@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+
+
 const GlobalStyles = createGlobalStyle`
 
   *,
@@ -8,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
     margin: 0px;
     padding: 0px;
     box-sizing: inherit;
+ 
+ 
   }
 
   html {
@@ -24,7 +28,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     overflow: scroll;
     overflow-x: hidden; 
-    background-color: #fff !important;
+  
+    
+    background-color: #d0cfcd !important;
   ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
@@ -36,3 +42,6 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export default GlobalStyles
+
+
+//  

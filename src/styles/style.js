@@ -8,7 +8,7 @@ height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto; 
-margin-top: 50px; 
+margin-top: 60px; 
 padding: 0.6rem;
   font-size: 18px;
   font-weight: 900;
@@ -119,6 +119,7 @@ export const Header2 = styled.h1`
   color: #636E75;
   margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 7vh;
+  margin-top: 20px;
   border: none;
   border-bottom: 2px solid;
   border-radius: 130px 50px/4px 2px;

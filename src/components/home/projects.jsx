@@ -15,7 +15,212 @@ import Container from '@material-ui/core/Container'
 import img1 from 'assets/images/shape3.webp'
 import moonFlappyBird1 from 'assets/images/moonFlappyBird.webp'
 import { BgImg3, Header2 } from 'styles/style'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+
+const Projects = () => {
+
+
+  return (
+    <Div>
+   <Slider>
+      <SliderTrack>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={kolektyw} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={mugOfWar} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={moonFlappyBird1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={kolektyw} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={mugOfWar} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={moonFlappyBird1} alt="ig"/>
+        </Slide>
+
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={kolektyw} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={mugOfWar} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={moonFlappyBird1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={kolektyw} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={rpg1} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={mugOfWar} alt="ig"/>
+        </Slide>
+        <Slide>
+        <Image title={`GitHub Grandpa1001`} src={moonFlappyBird1} alt="ig"/>
+        </Slide>
+
+
+      </SliderTrack>
+   </Slider>
+   </Div>
+  )
+
+}
+
+const Div = styled.div`
+  height: 300px;
+  margin-left:-40px;
+  margin-right:-40px;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  }
+`
+
+const Slider = styled.div`
+ 
+  height: 260px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display:grid;
+  place-items: center;
+  overflow: hidden;
+
+  &:before, 
+  &:after {
+    background: linear-gradient(to left, rgba(208,207,205,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width:20%;
+    z-index: 2;
+  }
+  &:before {
+    right:0;
+    top: 0;
+  }
+
+  &:after {
+    left:0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  }
+`
+
+const spin = keyframes`
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px *9));
+  }
+
+`;
+
+
+
+const SliderTrack = styled.div`
+  display: flex;
+  width: calc(250px * 18);
+  animation: ${spin} 40s linear infinite;
+
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+   
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  }
+`;
+
+const Slide = styled.div`
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-tems: center;
+  padding: 15px;
+  perspective: 100px;
+
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+   
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  }
+`;
+
+
+
+
+const Image = styled.img`
+  width: 100%;
+  transition: transform 1s;
+
+  &:hover {
+    transform: translateZ(20px);
+  }
+`
+
+export default Projects
+
+
+
+
+
+
+
+/*
+linear-gradient(to right, rgba(208,207,205,1) 0%, rgba(255,255,255,0) 100%);
+
+
 
 const useStyles = makeStyles({
   card: {
@@ -68,13 +273,12 @@ const useStyles = makeStyles({
   }
 })
 
-const Projects = () => {
-  const classes = useStyles()
-  return (
-    <Container
+
+----------------------------- render
+ <Container
       maxWidth="lg"
       style={{
-        marginTop: '5vh',
+        marginTop: '12vh',
         marginBottom: '5vh'
       }}
     >
@@ -312,24 +516,6 @@ const Projects = () => {
         </Div>
       </div>
     </Container>
-  )
-}
 
-const Div = styled.div`
-  position: absolute;
-  margin: 0;
-  left: 0;
-  right: 0;
-  top: 15%;
-  width: 100%;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    position: static !important;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    position: static !important;
-  }
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  }
-`
 
-export default Projects
+*/

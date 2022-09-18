@@ -23,10 +23,7 @@ class App extends Component {
     return (
       <Router>
         <ScrollToTop>
-          <Navbar
-            navbarState={this.state.navbarOpen}
-            handleNavbar={this.handleNavbar}
-          />
+          <Navbar/>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
@@ -42,3 +39,10 @@ class App extends Component {
 }
 
 export default App
+
+
+/*
+
+
+
+*/

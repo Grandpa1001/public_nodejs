@@ -3,23 +3,27 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import mgrGraczIntro from 'assets/svg/mgrGraczIntro.svg'
 import backgimg from 'assets/svg/backgimg.svg'
-import { Button, Header1,BgImg } from 'styles/style'
+import { Button, Header1} from 'styles/style'
+import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 
-//import img from 'assets/images/inBG.webp'
+//import img from 'assets/images/inBG.webp'   <Img src={mgrGraczIntro} alt="mgrGraczIntro" />
 //import Grid from '@material-ui/core/Grid'
 import portfol from 'assets/images/mgrGracz2177.webp'
 
 const Intro = () => {
   return (
   <Div>
-    <BgImg src={backgimg} alt="backgimg" />
+
+
     <Img src={mgrGraczIntro} alt="mgrGraczIntro" />
+    
         <Img
               src={portfol}
               alt="Minter #2177"
               title="Minter #2177"
             />
-        <Header2>poszukiwacz komunikacji niewerbalnej</Header2>
+        <Header2>poszukiwacz <Sub1>komunikacji</Sub1> niewerbalnej</Header2>
+
         <Button>Poznaj mnie</Button>
 
     </Div>
@@ -58,12 +62,7 @@ const Div1 = styled.div`
   }
 `
 const Sub1 = styled.label`
-font-size:60%;
-font-family: 'Montserrat';
-font-weight: 900;
-color:#d0cfcd;
-opacity:100%;
-text-shadow: -2px 0 #707070, 0 2px #707070, 2px 0 #707070, 0 -2px #707070;
+font-weight: 400;
 
 `
 
@@ -73,7 +72,7 @@ text-shadow: -2px 0 #707070, 0 2px #707070, 2px 0 #707070, 0 -2px #707070;
 const Img = styled.img`
   width: 80%;
   height: auto;
-  margin-top: -12rem;
+  margin-top: -8rem;
   margin-bottom: -10rem;
   display: block;
   margin-left: auto;
@@ -128,7 +127,6 @@ const Div = styled.div`
 const SecondButton = styled(Button)`
   background-color: #747474;
   border: 2px solid #747474;
-
   &:hover {
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     color: #747474;
@@ -138,10 +136,11 @@ const SecondButton = styled(Button)`
 `
 
 const Header2 = styled(Header1)`
-
+  margin-top: 20px;
   font-size: 35px;
   font-weight: bold;
-  color: #747474;
+  color: #ffffff;
+  z-index: 0;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 15px;
     line-height: 15px;
