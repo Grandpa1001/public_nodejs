@@ -4,6 +4,7 @@ import Intro from 'components/home/intro'
 
 import Projects from 'components/home/projects'
 import Skills from 'components/home/skills'
+import About from 'components/home/about'
 import Container from '@material-ui/core/Container'
 
 
@@ -12,20 +13,14 @@ const Home = () => {
     <Container maxWidth="xl"  >
       
       <Intro />
-      
+      <About />
       <Projects />
-      <Skills />
+      <Skills />  
+
+
     </Container>
   )
 }
-
-//
-//<ParallaxLayer offset={0}><Intro /> </ParallaxLayer>
-//<ParallaxLayer offset={1}><Projects /> </ParallaxLayer>
-//<ParallaxLayer offset={2}><Skills /> </ParallaxLayer>
-//</Parallax>        
-     
-
 
 
 export default Home

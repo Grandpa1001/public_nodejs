@@ -4,7 +4,7 @@ import htmlSvg from 'assets/svg/html.svg'
 import nodeSvg from 'assets/svg/node.svg'
 import cssSvg from 'assets/svg/css.svg'
 import jsSvg from 'assets/svg/js.svg'
-import sqlSvg from 'assets/svg/mysql.svg'
+import ferryt from 'assets/svg/ferryt.svg'
 import reactSvg from 'assets/svg/react.svg'
 import jquerySvg from 'assets/svg/jquery.svg'
 import unity from 'assets/svg/unity.svg'
@@ -15,7 +15,7 @@ import styled from 'styled-components'
 const Skills = () => {
   return (
     <Container maxWidth="lg">
-      <Header2>Technologie</Header2>
+      <Header2>Technologia</Header2>
       <ul>
       <List>
           <Img src={unity} alt="unity" />
@@ -29,9 +29,7 @@ const Skills = () => {
         <List>
           <Img src={jsSvg} alt="jsimg" />
         </List>
-        <List>
-          <Img src={sqlSvg} alt="sqlimg" />
-        </List>
+
         <List>
           <Img src={reactSvg} alt="reactimg" />
         </List>
@@ -39,7 +37,7 @@ const Skills = () => {
           <Img src={nodeSvg} alt="nodejsimg" />
         </List>
         <List>
-          <Img src={jquerySvg} alt="jqueryimg" />
+          <Img src={ferryt} alt="ferryt" title="FerytFlow"/>
         </List>
         <List>
           <Img src={mongoSvg} alt="mongodbimg" />

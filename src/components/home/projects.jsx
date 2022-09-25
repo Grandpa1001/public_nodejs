@@ -1,20 +1,12 @@
 /* eslint-disable no-useless-computed-key */
 import React from 'react'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
-import rpg1 from 'assets/images/rpg1.webp'
 import kolektyw from 'assets/images/kolektyw.webp'
 import mgrGracz_portfolio from 'assets/images/mgrGracz_portfol.webp'
 import gj from 'assets/images/gj.webp'
-import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-import img1 from 'assets/images/shape3.webp'
 import flappyBird from 'assets/images/FlappyBird.webp'
-import {Header2 } from 'styles/style'
+import kanel from 'assets/images/kanel.webp'
+import {Header2,Title} from 'styles/style'
 import styled, {keyframes} from 'styled-components'
 
 
@@ -23,7 +15,7 @@ const Projects = () => {
 
 
   return (
-    <Container>
+    <Container maxWidth="lg">
     <Div>
       <Header2>Moje projekty</Header2>
    <Slider>
@@ -50,11 +42,29 @@ const Projects = () => {
         <ImageOverlay>
         <ImageTitle>NFT Polska Collective</ImageTitle>
         <ImageDescription>Wizja metaversu i kolektywu w nim umieszczonego. Wygrana praca konkursowa na "zdefiniuj kolektyw" dla NFT Polska.</ImageDescription>
-        <ImageLink href="https://drive.google.com/drive/u/0/folders/1-2yB60eHijGYJa4U7gMTdoAVsDfNIs2S" target="_blank">Pobierz</ImageLink> 
         <ImageLink href="https://twitter.com/MgrGracz/status/1565102856730038272?s=20&t=03TLQ8-nqShxZlwY-d4BSw" target="_blank">Twitter</ImageLink> 
+        <ImageLink href="https://drive.google.com/drive/u/0/folders/1-2yB60eHijGYJa4U7gMTdoAVsDfNIs2S" target="_blank">Pobierz</ImageLink> 
         </ImageOverlay>
         </Slide>
-  
+        <Slide>
+        <Image title={`Kanel`} src={kanel} alt="kanel"/>
+        <ImageOverlay>
+        <ImageTitle>Kanel.com.pl</ImageTitle>
+        <ImageDescription>Przygotowanie strony do katalogu Wordpress dla firmy KANEL.</ImageDescription>
+        <ImageLink href="https://kanel.com.pl/" target="_blank">Link</ImageLink> 
+        </ImageOverlay>
+        </Slide>
+        <Slide>
+        <Image title={`GameJame`} src={gj} alt="gj"/>
+        <ImageOverlay>
+        <ImageTitle>Mug of War</ImageTitle>
+        <ImageDescription>Projekt gry realizowany na GameJamie PGG JAM: All Play Accessibility Vol3.</ImageDescription>
+        <ImageLink href="https://gildiagraczy.pl/2018/12/16/pgg-jam-all-play-accessibility-vol-3-relacja/" target="_blank">Wydarzenie</ImageLink> 
+        <ImageLink href="https://wolix.itch.io/mug-of-war" target="_blank">Pobierz</ImageLink> 
+        </ImageOverlay>
+        </Slide>
+
+
         <Slide>
         <Image title={`MoonFlappyBird`} src={flappyBird} alt="ig"/>
         <ImageOverlay>
@@ -73,27 +83,87 @@ const Projects = () => {
         </ImageOverlay>
         </Slide>
         <Slide>
-        <Image title={`GitHub Grandpa1001`} src={kolektyw} alt="ig"/>
+        <Image title={`Kolektyw`} src={kolektyw} alt="ig"/>
         <ImageOverlay>
         <ImageTitle>NFT Polska Collective</ImageTitle>
         <ImageDescription>Wizja metaversu i kolektywu w nim umieszczonego. Wygrana praca konkursowa na "zdefiniuj kolektyw" dla NFT Polska.</ImageDescription>
-        <ImageLink>LINK</ImageLink>
+        <ImageLink href="https://twitter.com/MgrGracz/status/1565102856730038272?s=20&t=03TLQ8-nqShxZlwY-d4BSw" target="_blank">Twitter</ImageLink> 
+        <ImageLink href="https://drive.google.com/drive/u/0/folders/1-2yB60eHijGYJa4U7gMTdoAVsDfNIs2S" target="_blank">Pobierz</ImageLink> 
         </ImageOverlay>
         </Slide>
-
+        <Slide>
+        <Image title={`Kanel`} src={kanel} alt="kanel"/>
+        <ImageOverlay>
+        <ImageTitle>Kanel.com.pl</ImageTitle>
+        <ImageDescription>Przygotowanie strony do katalogu Wordpress dla firmy KANEL.</ImageDescription>
+        <ImageLink href="https://kanel.com.pl/" target="_blank">Link</ImageLink> 
+        </ImageOverlay>
+        </Slide>
+        <Slide>
+        <Image title={`GameJame`} src={gj} alt="gj"/>
+        <ImageOverlay>
+        <ImageTitle>Mug of War</ImageTitle>
+        <ImageDescription>Projekt gry realizowany na GameJamie PGG JAM: All Play Accessibility Vol3.</ImageDescription>
+        <ImageLink href="https://gildiagraczy.pl/2018/12/16/pgg-jam-all-play-accessibility-vol-3-relacja/" target="_blank">Wydarzenie</ImageLink> 
+        <ImageLink href="https://wolix.itch.io/mug-of-war" target="_blank">Pobierz</ImageLink> 
+        </ImageOverlay>
+        </Slide>
 
       </SliderTrack>
    </Slider>
    </Div>
+   <Title>Pozostałe realizowane projekty</Title> 
+    <Text2>* Kanel.com.pl <a href="https://kanel.com.pl/" target="_blank">kanel.com.pl</a> strona firmy kanel- zaprojektowanie UI</Text2>
+    <Text2>* Wypożyczalnia-marzeń <a href="https://www.instagram.com/wypozyczalnia_marzen/" target="_blank">instagram</a> Pełna obsługa eComerce firmy </Text2>
+    <BrStyle></BrStyle>
    </Container>
+
+
   )
 
 }
 
+
+
+const TextHead = styled.h2`
+  color: #707070;
+  font-size: 22px;
+  margin-left:-20px;
+  font-style: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #636E75;
+  margin-bottom: 10px;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 12px;
+    margin-top: 3vh;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 15px;
+    margin-top: 3vh;
+  }
+`
+
+const Text2 = styled.h2`
+  color: #707070;
+  font-size: 12px;
+  font-style: normal;
+  font-size: 22px;
+  text-align: left;
+  color: #636E75;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 12px;
+    margin-top: 3vh;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 15px;
+    margin-top: 3vh;
+  }
+`
+
 const Div = styled.div`
   height: 600px;
-  margin-left:-40px;
-  margin-right:-40px;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
 
   }
@@ -104,18 +174,9 @@ const Div = styled.div`
   }
 `
 
-const DivHeader = styled.div`
-  height: 200px;
+const BrStyle = styled.div`
+height:100px;`
 
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-
-  }
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  }
-`
 
 const Slider = styled.div`
  
@@ -133,7 +194,7 @@ const Slider = styled.div`
     content: '';
     height: 100%;
     position: absolute;
-    width:20%;
+    width:7%;
     z-index: 1;
   }
   &:before {
@@ -276,6 +337,7 @@ const ImageDescription = styled.div`
   width: 250px;
   margin-top: 0.25em;
   text-align: center;
+  
   @media only screen and (min-width: 100px) and (max-width: 320px) {
 
   }

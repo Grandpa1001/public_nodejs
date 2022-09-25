@@ -155,16 +155,9 @@ export const Header2 = styled.h1`
 
 
 export const Title = styled.h1`
-  font-size: 40px;
-  font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 11vh;
-  color: #636E75;
-  border: none;
-  border-bottom: 2px solid;
-  border-radius: 130px 50px/4px 2px;
-  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
@@ -174,6 +167,32 @@ export const Title = styled.h1`
   }
 `
 
+export const TextPart1 = styled.h1`
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: bold;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 25px;
+    margin-top: 15vh;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 30px;
+  }
+`
+export const TextPart2 = styled.h1`
+  color: #707070;
+
+  font-size: 30px;
+  font-weight: bold;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 25px;
+    margin-top: 15vh;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 30px;
+  }
+`
 // Containers
 
 export const divContainer = styled.div`

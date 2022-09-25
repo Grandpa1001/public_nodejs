@@ -24,7 +24,7 @@ const Intro = () => {
             />
         <Header2>poszukiwacz <Sub1>komunikacji</Sub1> niewerbalnej</Header2>
 
-        <Button>Poznaj mnie</Button>
+        
 
     </Div>
   )
@@ -119,9 +119,10 @@ const Img = styled.img`
   `
 
 const Div = styled.div`
-  margin-top: 18vh;
+  margin-top: 220px;
   z-index: 0;
   flex-grow: 1;
+  margin-bottom: 210px;
 `
 
 const SecondButton = styled(Button)`
