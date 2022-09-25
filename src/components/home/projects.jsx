@@ -2,11 +2,11 @@
 import React from 'react'
 import kolektyw from 'assets/images/kolektyw.webp'
 import mgrGracz_portfolio from 'assets/images/mgrGracz_portfol.webp'
-import gj from 'assets/images/gj.webp'
 import Container from '@material-ui/core/Container'
 import flappyBird from 'assets/images/FlappyBird.webp'
 import kanel from 'assets/images/kanel.webp'
-import {Header2,Title} from 'styles/style'
+import wpozycz from 'assets/images/wpozycz.webp'
+import {Header2} from 'styles/style'
 import styled, {keyframes} from 'styled-components'
 
 
@@ -18,15 +18,17 @@ const Projects = () => {
     <Container maxWidth="lg">
     <Div>
       <Header2>Moje projekty</Header2>
+      <BrStyle></BrStyle>
    <Slider>
       <SliderTrack>
-      <Slide>
-        <Image title={`MoonFlappyBird`} src={flappyBird} alt="ig"/>
+        <Slide>
+        <Image title={`Wypożyczalnia-marzeń`} src={wpozycz} alt="ig"/>
         <ImageOverlay>
-        <ImageTitle>Moon Flappy Bird</ImageTitle>
-        <ImageDescription>Gra oparta o klasyczny</ImageDescription>
-        <ImageDescription>styl flappybird w tematyce web3.</ImageDescription>
-        <ImageLink href="https://play.unity.com/mg/other/moonflappybird" target="_blank">Zagraj</ImageLink>
+        <ImageTitle>Wypożyczalnia-marzeń</ImageTitle>
+        <ImageDescription>Strona, logo, ulotki</ImageDescription>
+        <ImageDescription>i pełny ecomerce firmy.</ImageDescription>
+        <ImageLink href="https://github.com/Grandpa1001/Wypozyczalnia-marzen" target="_blank">Github</ImageLink>
+        <ImageLink href="https://www.instagram.com/wypozyczalnia_marzen/" target="_blank">Instagram</ImageLink>
         </ImageOverlay>
         </Slide>
         <Slide>
@@ -55,23 +57,24 @@ const Projects = () => {
         </ImageOverlay>
         </Slide>
         <Slide>
-        <Image title={`GameJame`} src={gj} alt="gj"/>
-        <ImageOverlay>
-        <ImageTitle>Mug of War</ImageTitle>
-        <ImageDescription>Projekt gry realizowany na GameJamie PGG JAM: All Play Accessibility Vol3.</ImageDescription>
-        <ImageLink href="https://gildiagraczy.pl/2018/12/16/pgg-jam-all-play-accessibility-vol-3-relacja/" target="_blank">Wydarzenie</ImageLink> 
-        <ImageLink href="https://wolix.itch.io/mug-of-war" target="_blank">Pobierz</ImageLink> 
-        </ImageOverlay>
-        </Slide>
-
-
-        <Slide>
         <Image title={`MoonFlappyBird`} src={flappyBird} alt="ig"/>
         <ImageOverlay>
         <ImageTitle>Moon Flappy Bird</ImageTitle>
         <ImageDescription>Gra oparta o klasyczny</ImageDescription>
         <ImageDescription>styl flappybird w tematyce web3.</ImageDescription>
         <ImageLink href="https://play.unity.com/mg/other/moonflappybird" target="_blank">Zagraj</ImageLink>
+        </ImageOverlay>
+        </Slide>
+
+
+        <Slide>
+        <Image title={`Wypożyczalnia-marzeń`} src={wpozycz} alt="ig"/>
+        <ImageOverlay>
+        <ImageTitle>Wypożyczalnia-marzeń</ImageTitle>
+        <ImageDescription>Strona, logo, ulotki</ImageDescription>
+        <ImageDescription>i pełny ecomerce firmy.</ImageDescription>
+        <ImageLink href="https://github.com/Grandpa1001/Wypozyczalnia-marzen" target="_blank">Github</ImageLink>
+        <ImageLink href="https://www.instagram.com/wypozyczalnia_marzen/" target="_blank">Instagram</ImageLink>
         </ImageOverlay>
         </Slide>
         <Slide>
@@ -100,22 +103,19 @@ const Projects = () => {
         </ImageOverlay>
         </Slide>
         <Slide>
-        <Image title={`GameJame`} src={gj} alt="gj"/>
+        <Image title={`MoonFlappyBird`} src={flappyBird} alt="ig"/>
         <ImageOverlay>
-        <ImageTitle>Mug of War</ImageTitle>
-        <ImageDescription>Projekt gry realizowany na GameJamie PGG JAM: All Play Accessibility Vol3.</ImageDescription>
-        <ImageLink href="https://gildiagraczy.pl/2018/12/16/pgg-jam-all-play-accessibility-vol-3-relacja/" target="_blank">Wydarzenie</ImageLink> 
-        <ImageLink href="https://wolix.itch.io/mug-of-war" target="_blank">Pobierz</ImageLink> 
+        <ImageTitle>Moon Flappy Bird</ImageTitle>
+        <ImageDescription>Gra oparta o klasyczny</ImageDescription>
+        <ImageDescription>styl flappybird w tematyce web3.</ImageDescription>
+        <ImageLink href="https://play.unity.com/mg/other/moonflappybird" target="_blank">Zagraj</ImageLink>
         </ImageOverlay>
         </Slide>
 
       </SliderTrack>
    </Slider>
    </Div>
-   <Title>Pozostałe realizowane projekty</Title> 
-    <Text2>* Kanel.com.pl <a href="https://kanel.com.pl/" target="_blank">kanel.com.pl</a> strona firmy kanel- zaprojektowanie UI</Text2>
-    <Text2>* Wypożyczalnia-marzeń <a href="https://www.instagram.com/wypozyczalnia_marzen/" target="_blank">instagram</a> Pełna obsługa eComerce firmy </Text2>
-    <BrStyle></BrStyle>
+<BrStyle></BrStyle>
    </Container>
 
 
@@ -175,7 +175,7 @@ const Div = styled.div`
 `
 
 const BrStyle = styled.div`
-height:100px;`
+height:50px;`
 
 
 const Slider = styled.div`
@@ -221,7 +221,7 @@ const Slider = styled.div`
 
 const spin = keyframes`
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-300px *3));
+  100% { transform: translateX(calc(-300px *5));
   }
 
 `;
@@ -229,7 +229,7 @@ const spin = keyframes`
 
 const SliderTrack = styled.div`
   display: flex;
-  width: calc(300px * 18);
+  width: calc(300px * 10);
   animation: ${spin} 40s linear infinite;
 
 

@@ -169,9 +169,13 @@ export const Title = styled.h1`
 
 export const TextPart1 = styled.h1`
   color: #ffffff;
-
-  font-size: 30px;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
+  justify-content: center 
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
@@ -182,9 +186,13 @@ export const TextPart1 = styled.h1`
 `
 export const TextPart2 = styled.h1`
   color: #707070;
-
-  font-size: 30px;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 24px;
   font-weight: bold;
+  text-align: center;
+  justify-content: center ;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
