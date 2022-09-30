@@ -124,44 +124,6 @@ const Projects = () => {
 }
 
 
-
-const TextHead = styled.h2`
-  color: #707070;
-  font-size: 22px;
-  margin-left:-20px;
-  font-style: normal;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #636E75;
-  margin-bottom: 10px;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    font-size: 12px;
-    margin-top: 3vh;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 15px;
-    margin-top: 3vh;
-  }
-`
-
-const Text2 = styled.h2`
-  color: #707070;
-  font-size: 12px;
-  font-style: normal;
-  font-size: 22px;
-  text-align: left;
-  color: #636E75;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    font-size: 12px;
-    margin-top: 3vh;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 15px;
-    margin-top: 3vh;
-  }
-`
-
 const Div = styled.div`
   height: 600px;
   @media only screen and (min-width: 100px) and (max-width: 320px) {

@@ -1,8 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import mgrGraczIntro from 'assets/svg/mgrGraczIntro.svg'
-import { Button, Header1} from 'styles/style'
+import { Header1} from 'styles/style'
 import portfol from 'assets/images/mgrGracz2177.webp'
 
 const Intro = () => {
@@ -25,37 +24,6 @@ const Intro = () => {
   )
 }
 
-
-
-const Linku = styled(NavLink)`
-  margin-left: 30%;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    margin-left: 20%;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    margin-left: 20%;
-  }
-`
-const Linku2 = styled(NavLink)`
-  margin-left: 15%;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    margin-left: 5%;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    margin-left: 5%;
-  }
-`
-const Div1 = styled.div`
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    margin-top: 30%;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    margin-top: 40%;
-  }
-`
 const Sub1 = styled.label`
 font-weight: 400;
 
@@ -119,18 +87,6 @@ const Div = styled.div`
   flex-grow: 1;
   margin-bottom: 210px;
 `
-
-const SecondButton = styled(Button)`
-  background-color: #747474;
-  border: 2px solid #747474;
-  &:hover {
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
-    color: #747474;
-    border-color: transparent;
-    background-color: transparent;
-  }
-`
-
 const Header2 = styled(Header1)`
   margin-top: 20px;
   font-size: 35px;

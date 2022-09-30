@@ -10,8 +10,6 @@ import gh from 'assets/svg/github.svg'
 import discord from 'assets/svg/discord.svg'
 
 
-const fror = `Stworzone przez mgrGRACZ`
-
 const Ftr = () => {
   return (
 

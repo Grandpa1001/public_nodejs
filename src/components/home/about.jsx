@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Header2, TextPart1,TextPart2 } from 'styles/style'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
@@ -27,20 +26,5 @@ const about = () => {
     </Container>
   )
 }
-
-const Image = styled.img`
-z-index: 1;
-margin-top: 20px;
-margin-left:200px;
-width: 200px;
-height: 200px;
-`
-
-const Image2 = styled.img`
-z-index: 1;
-
-margin-bottom: 30px;
-margin-top:20px;
-`
 
 export default about
