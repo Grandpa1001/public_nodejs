@@ -4,37 +4,25 @@ import { Header2, TextPart1,TextPart2 } from 'styles/style'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import agilePM from 'assets/images/agilePM.webp'
-import glideApp from 'assets/images/glideApp.webp'
+import glideApp from 'assets/images/discord1.webp'
 
 const about = () => {
   return (
     <Container>
         <Header2>O mnie</Header2>
             <Grid container spacing={0}>
-                <Grid item xs={6} sm={6}>
+                <Grid item xs={0} sm={6}>
                         <TextPart1>
-                          Mam na imię Kamil, znany w web3 jako mgrGRACZ. 
-                          Pracuje w branży IT już od 6 lat. Wykorzystałem ten
-                          czas na naukę wszystkich etapów wytwarzania
-                          oprogramowania i teraz bez problemu mogę
-                          powiedzieć, że na tworzeniu gotowych rozwiązań zjadłem zęby.
+                        Mam na imię Kamil. Od ponad 6 lat pracuję w branży IT, 
+                        gdzie tworzymy rozwiązania dla dużych klientów biznesowych. Dzięki temu w 
+                        swojej dotychczasowej karierze zdobyłem doświadczenie uwzględniające cały zakres wytwarzania oprogramowania.
                         </TextPart1>
 
                 </Grid>
-                <Grid item xs={6} sm={6}>
-                  <Image title={`Agile PM`} src={agilePM} alt="agile"/>
-  
-                </Grid>
-                <Grid item xs={6} sm={6}>
-                <Image2 title={`Aplikacja do NFT`} src={glideApp} alt="nftApp"/>
-
-                </Grid>
-                <Grid item xs={6} sm={6}>
+                <Grid item xs={0} sm={6}>
                         <TextPart2>
-                            Chciałbym dodatkowo być częścią świata który
-                            dopiero się kształtuje. Takim dla mnie jest web3.
-                            Można tu wykorzystać swoje nie tylko techniczne
-                            umiejętności ale również artystyczne.
+                        W świecie web3 znany jako mgrGracz. Po godzinach aktywnie udzielam się w społeczności NFT Polska.
+                        Technologia stojąca za światem web3 sprawia, że z dnia na dzień chce wiedzieć o nim coraz więcej. Mam możliwośc nie tylko rozwoju technicznego ale i artystycznego.
                         </TextPart2>
                 </Grid>
             </Grid>
@@ -52,8 +40,7 @@ height: 200px;
 
 const Image2 = styled.img`
 z-index: 1;
-width: 600px;
-height: 400px;
+
 margin-bottom: 30px;
 margin-top:20px;
 `

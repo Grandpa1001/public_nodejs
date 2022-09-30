@@ -175,7 +175,8 @@ export const TextPart1 = styled.h1`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  justify-content: center 
+  justify-content: center ;
+  text-shadow: black 0.1em 0.1em 0.2em;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
@@ -192,6 +193,7 @@ export const TextPart2 = styled.h1`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  text-shadow: white 0.1em 0.1em 0.2em;
   justify-content: center ;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;

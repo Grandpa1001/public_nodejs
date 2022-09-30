@@ -98,7 +98,7 @@ const Image = styled.img`
   margin-top: 10px;
   margin-bottom: 10px;
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 5%;
   }
 `
 
@@ -109,7 +109,7 @@ const Logo = styled.img`
   margin-top: 10px;
   margin-bottom: 10px;
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 16%;
   }
 `
 
