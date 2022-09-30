@@ -2,12 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import mgrGraczIntro from 'assets/svg/mgrGraczIntro.svg'
-import backgimg from 'assets/svg/backgimg.svg'
 import { Button, Header1} from 'styles/style'
-import {Parallax, ParallaxLayer} from '@react-spring/parallax';
-
-//import img from 'assets/images/inBG.webp'   <Img src={mgrGraczIntro} alt="mgrGraczIntro" />
-//import Grid from '@material-ui/core/Grid'
 import portfol from 'assets/images/mgrGracz2177.webp'
 
 const Intro = () => {

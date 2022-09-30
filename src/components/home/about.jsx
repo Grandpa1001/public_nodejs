@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { Header2, TextPart1,TextPart2 } from 'styles/style'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
-import agilePM from 'assets/images/agilePM.webp'
-import glideApp from 'assets/images/discord1.webp'
 
 const about = () => {
   return (
