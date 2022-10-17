@@ -137,7 +137,12 @@ const Div = styled.div`
 `
 
 const BrStyle = styled.div`
-height:50px;`
+height:50px;
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+
+}
+
+`
 
 
 const Slider = styled.div`
@@ -175,6 +180,7 @@ const Slider = styled.div`
 
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
+   
 
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {

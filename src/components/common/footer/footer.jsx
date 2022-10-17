@@ -97,6 +97,8 @@ const Image = styled.img`
   margin-bottom: 10px;
   @media only screen and (max-width: 600px) {
     width: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 `
 

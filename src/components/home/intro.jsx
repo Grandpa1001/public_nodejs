@@ -61,7 +61,7 @@ const Img = styled.img`
     }
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    width: 40%;
+    width: 80%;
     display: block;
     border-radius: 0%;
     margin-top: 0rem;
@@ -86,6 +86,11 @@ const Div = styled.div`
   z-index: 0;
   flex-grow: 1;
   margin-bottom: 210px;
+
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+  margin-bottom: 20px;
+  margin-top: 60px;
+  }
 `
 const Header2 = styled(Header1)`
   margin-top: 20px;
@@ -99,9 +104,7 @@ const Header2 = styled(Header1)`
     margin-left: 4rem;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 17px;
-    line-height: 15px;
-    margin-left: 2rem;
+    font-size: 30px;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     font-size: 22px;

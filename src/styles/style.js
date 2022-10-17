@@ -133,7 +133,7 @@ export const Header2 = styled.h1`
     margin-bottom: 7vh;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 30px
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     color: #636E75;
@@ -176,13 +176,15 @@ export const TextPart1 = styled.h1`
   font-weight: bold;
   text-align: center;
   justify-content: center ;
-  text-shadow: black 0.1em 0.1em 0.2em;
+
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 30px;
+    font-size: 18px;
+    margin-top:0px;
+    margin-bottom:20px;
   }
 `
 export const TextPart2 = styled.h1`
@@ -193,14 +195,15 @@ export const TextPart2 = styled.h1`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  text-shadow: white 0.1em 0.1em 0.2em;
+
   justify-content: center ;
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     font-size: 25px;
     margin-top: 15vh;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    font-size: 30px;
+    font-size: 18px;
+    margin-top:0px;
   }
 `
 // Containers

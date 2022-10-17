@@ -55,7 +55,10 @@ const List = styled.li`
     width: 20%;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    margin: 5.3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -70,7 +73,7 @@ const Img = styled.img`
     width: 100%;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
-    width: 100%;
+    width: 60%;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     width: 50%;
